@@ -1,0 +1,8 @@
+{
+  "qualified": true,
+  "channel": "LinkedIn",
+  "tone": "Professional",
+  "confidence": 0.96,
+  "subject": "Improving engineering visibility at Acme AI",
+  "message": "Hi Sarah, I noticed Acme AI is growing its engineering organization. Many VP Engineering teams struggle with measuring developer productivity without adding more reporting overhead. I thought it might be worth connecting to share how AI-powered workflow automation can surface actionable engineering insights while fitting into existing tools like GitHub and Datadog. Open to a quick conversation?"
+}
