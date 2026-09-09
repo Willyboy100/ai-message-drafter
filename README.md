@@ -20,7 +20,7 @@ The workflow receives a qualified lead, retrieves context, generates personalize
 
 ## Workflow Architecture
 
-*Add workflow screenshot here.*
+![Image]docs/workflow-overview.png
 
 ## Core Features
 
