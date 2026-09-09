@@ -1,0 +1,11 @@
+{
+  "first_name": "Sarah",
+  "last_name": "Chen",
+  "title": "VP of Engineering",
+  "company": "Acme AI",
+  "company_size": "201-500",
+  "industry": "Developer Tools",
+  "location": "San Francisco, CA",
+  "tech_stack": ["GitHub", "Datadog", "AWS"],
+  "pain_point": "Engineering leaders struggle to measure developer productivity across teams."
+}
