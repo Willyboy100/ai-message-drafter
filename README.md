@@ -83,3 +83,17 @@ Generated messages are written back to the data layer with a review/status state
   "company_size": "201-500",
   "industry": "Developer Tools"
 }
+
+## Genereted Output
+
+{
+  "prospect_name": "Sarah Chen",
+  "company": "Acme AI",
+  "segment": "Marketplace",
+  "credibility_rung": "STR8FIRE",
+  "linkedin_connection": "Hi Sarah, noticed Acme AI is expanding its engineering organization. Curious how you're thinking about developer productivity as the team grows.",
+  "linkedin_followup": "Hi Sarah, thanks for connecting. I noticed Acme AI is growing its engineering organization. Teams at this stage often run into challenges around visibility and coordination across engineering. Would you be open to a quick conversation?",
+  "x_message": "Noticed Acme AI is scaling its engineering team. That often creates visibility challenges across teams. Curious how you're handling that today?",
+  "telegram_message": "Hi Sarah, noticed Acme AI is expanding its engineering organization. As teams grow, visibility across engineering can become harder to maintain. Curious how you're approaching that today?",
+  "review_status": "Pending Review"
+}
