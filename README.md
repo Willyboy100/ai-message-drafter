@@ -116,21 +116,21 @@ Reusable prompt architecture
 
 ### AI
 
-OpenAI
-Prompt Engineering
-Structured LLM Outputs
+- OpenAI
+- Prompt Engineering
+- Structured LLM Outputs
 
 ### Automation
 
-n8n
-Webhooks
-Conditional Logic
+- n8n
+- Webhooks
+- Conditional Logic
 
 ### Data
 
-Airtable
-JSON
-REST APIs
+- Airtable
+- JSON
+- REST APIs
 
 ## Repository Structure
 
