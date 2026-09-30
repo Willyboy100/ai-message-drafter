@@ -134,7 +134,7 @@ Reusable prompt architecture
 
 ## Repository Structure
 
----
+
 ai-message-drafter/
 │
 ├── README.md
