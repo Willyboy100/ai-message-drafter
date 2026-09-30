@@ -152,4 +152,15 @@ ai-message-drafter/
     ├── sample-lead.json
     └── generated-message.json
 
+```
+### Future Improvements
+
+- Automated message quality evaluation
+- A/B testing for generated messages
+- Additional communication channels
+- CRM synchronization
+- Human approval workflow
+- Message performance tracking
+- Automated personalization using external enrichment data
+
 
