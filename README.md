@@ -84,8 +84,10 @@ Generated messages are written back to the data layer with a review/status state
   "industry": "Developer Tools"
 }
 
-## Genereted Output
+```
+## Generated Output
 
+```json
 {
   "prospect_name": "Sarah Chen",
   "company": "Acme AI",
@@ -97,3 +99,7 @@ Generated messages are written back to the data layer with a review/status state
   "telegram_message": "Hi Sarah, noticed Acme AI is expanding its engineering organization. As teams grow, visibility across engineering can become harder to maintain. Curious how you're approaching that today?",
   "review_status": "Pending Review"
 }
+
+
+
+
