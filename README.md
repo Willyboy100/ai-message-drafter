@@ -100,6 +100,40 @@ Generated messages are written back to the data layer with a review/status state
   "review_status": "Pending Review"
 }
 
+```
+## Key Features
+AI-powered personalized messaging
+Qualification-based automation
+Duplicate outreach prevention
+Multi-channel message generation
+Structured AI output
+Human review before outreach
+Airtable integration
+n8n workflow orchestration
+Reusable prompt architecture
+
+## Technology Stack
+
+### AI
+
+OpenAI
+Prompt Engineering
+Structured LLM Outputs
+
+### Automation
+
+n8n
+Webhooks
+Conditional Logic
+
+### Data
+
+Airtable
+JSON
+REST APIs
+
+## Repository Structure
+
 
 
 
