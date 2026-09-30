@@ -134,6 +134,21 @@ Reusable prompt architecture
 
 ## Repository Structure
 
-
+ai-message-drafter/
+│
+├── README.md
+│
+├── docs/
+│   └── workflow-overview.png
+│
+├── workflow/
+│   └── message-drafter-workflow.json
+│
+├── prompts/
+│   └── system-prompt.md
+│
+└── examples/
+    ├── sample-lead.json
+    └── generated-message.json
 
 
