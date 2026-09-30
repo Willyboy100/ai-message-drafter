@@ -116,7 +116,7 @@ Reusable prompt architecture
 
 ### AI
 
-- OpenAI
+- Groq / Llama 3.3 70B
 - Prompt Engineering
 - Structured LLM Outputs
 
