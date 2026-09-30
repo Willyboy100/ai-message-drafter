@@ -1,80 +1,85 @@
 # AI Message Drafter
 
-An AI-powered outbound messaging system that transforms qualified prospect records into structured, personalized outreach messages using LLM orchestration.
+An AI-powered outbound messaging system that turns qualified prospect data into personalized, multi-channel sales messages using n8n, Airtable, and LLM orchestration.
 
 ## Overview
 
-This project automates personalized outbound messaging by combining lead context, business rules, and AI-generated copy into a structured workflow.
+The AI Message Drafter automates one of the repetitive parts of outbound sales: turning prospect information into relevant, personalized messaging.
 
-Rather than generating free-form text, the system produces validated outputs that are ready for CRM workflows and multi-channel outreach.
+The workflow monitors qualified prospects, checks whether they meet the messaging criteria, gathers relevant context, generates channel-specific messages with an LLM, and stores the results for review and follow-up.
 
-## Problem
+## The Problem
 
-Writing personalized outreach at scale is repetitive and inconsistent.
+Personalized outbound messaging becomes difficult to manage as the number of prospects increases.
 
-Sales teams often spend hours researching prospects, maintaining tone, and adapting messages for different channels.
+Sales teams need to:
 
-## Solution
+- Review prospect information
+- Decide which prospects are worth contacting
+- Personalize messages
+- Adapt messaging to different channels
+- Keep track of generated outreach
+- Avoid contacting the same prospect repeatedly
 
-The workflow receives a qualified lead, retrieves context, generates personalized messaging with an LLM, validates the output, and returns structured content for downstream automation.
+These steps create repetitive manual work and increase the chance of inconsistent messaging.
+
+## The Solution
+
+This workflow turns the process into an automated pipeline:
+
+**Qualified Prospect → Qualification Check → Context Retrieval → AI Message Generation → Review → CRM/Database Update**
+
+A prospect must meet the defined qualification threshold before the AI generates outreach.
 
 ## Workflow Architecture
 
 ![Workflow Overview](docs/workflow-overview.png)
 
-## Core Features
+## Core Workflow
 
-* AI-powered message generation
-* Prospect context retrieval
-* Structured LLM outputs
-* Channel-specific messaging
-* Validation before delivery
-* Airtable integration
-* Workflow state tracking
+### 1. Qualification
 
-## Technology Stack
+The workflow evaluates the prospect's qualification score.
 
-**AI**
+Only prospects meeting the configured **ASSET Score ≥ 4** threshold continue to the messaging stage.
 
-* OpenAI
-* Prompt Engineering
-* Structured Outputs
+### 2. Duplicate Prevention
 
-**Automation**
+Before generating new outreach, the workflow checks whether messaging has already been created for the prospect.
 
-* n8n
-* Airtable
-* Webhooks
-* Conditional Logic
+This prevents unnecessary duplicate outreach.
 
-**Data**
+### 3. Context Retrieval
 
-* JSON
-* REST APIs
+Relevant prospect and company information is retrieved from the existing data source.
 
-## Example Output
+This context is passed to the AI generation stage.
 
-The system generates structured responses that can be consumed by CRMs and automation workflows.
+### 4. AI Message Generation
+
+The LLM generates personalized outreach based on the available prospect information and defined messaging rules.
+
+The system generates messaging for multiple channels, including:
+
+- LinkedIn connection
+- LinkedIn follow-up
+- X
+- Telegram
+
+### 5. Review & Tracking
+
+Generated messages are written back to the data layer with a review/status state so they can be reviewed before being used for outreach.
+
+## Example
+
+### Input
 
 ```json
 {
-  "channel": "LinkedIn",
-  "tone": "Professional",
-  "qualified": true,
-  "message": "Hi Sarah, I noticed..."
+  "first_name": "Sarah",
+  "last_name": "Chen",
+  "title": "VP of Engineering",
+  "company": "Acme AI",
+  "company_size": "201-500",
+  "industry": "Developer Tools"
 }
-```
-
-## Future Improvements
-
-* Multi-language messaging
-* A/B message generation
-* Human approval workflow
-* Message quality evaluation
-* CRM sync optimization
-
----
-
-**William Njoku**
-
-AI Automation Engineer | LLM Systems | Workflow Orchestration
